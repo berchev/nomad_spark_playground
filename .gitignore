@@ -1,0 +1,6 @@
+aws/env/us-east/terraform.tfstate
+aws/env/us-east/terraform.tfstate.backup
+aws/env/us-east/terraform.tfvars
+aws/env/us-east/vagrant_nomad_key.pem
+aws/env/us-east/.terraform/
+.vagrant/
