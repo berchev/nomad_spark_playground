@@ -7,13 +7,15 @@ Downloading this repo content and following the provided steps, you are going to
 - 4 Nomad Clients
 
 ## Files
-- `aws/env/us-east` directory - Contain terraform code files required to create AWS Nomad Clients and Servers
-- `aws/modules/hashistack` directory - Contain terraform module file 
-- `aws/packer.json` file - Packer file needed for creation of AWS image (Later we will use this image to create AWS environment)
-- `exmples/spark` directory - Spark configurations needed for creation of Spark History Server and HDFS (Hadoop distributed file system)
-- `Vagrantfile` - Vagrant configuration file of our DEV environment
-- `shared` directory - Contain configuration and installation scripts
-- `nomad-spark-pic` directory - Contain example pictures
+| File                   | Description                                                                                                |
+|          :---:         |                                    :---:                                                                   |
+|`aws/env/us-east`       | Contain terraform code files required to create AWS Nomad Clients and Servers                              | 
+|`aws/modules/hashistack`| Contain terraform module file                                                                              |
+|`aws/packer.json`       | Packer file needed for creation of AWS image (Later we will use this image to create AWS environment)      |
+|`exmples/spark`         | Spark configurations needed for creation of Spark History Server and HDFS (Hadoop distributed file system) |
+|`Vagrantfile`           | Vagrant configuration file of our DEV environment                                                          |
+|`shared`                | Contain configuration and installation scripts                                                             |
+|`nomad-spark-pic`       | Contain example pictures                                                                                   |
 
 ## Requirements:
 - Virtualbox installed. If not click [here](https://www.virtualbox.org/wiki/Downloads) to download and install
@@ -151,7 +153,7 @@ The Consul UI can be accessed at http://PUBLIC_IP:8500/ui.
   
 - you can use UI too:
   - `Nomad_Server_IP:4646` into browser
-  - Check different menus: `Jobs`, Clients`, `Servers`
+  - Check different menus: `Jobs`, `Clients`, `Servers`
   ![](https://github.com/berchev/nomad_spark_playground/blob/master/nomad-spark-pics/nomad1.png)
 
 

@@ -16,12 +16,6 @@ Vagrant.configure(2) do |config|
     echo "Dependencies..."
     sudo apt-get install -y unzip tree
 
-   # # Azure CLI
-   # echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheezy main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
-   # sudo apt-key adv --keyserver packages.microsoft.com --recv-keys 417A0893
-   # sudo apt-get install apt-transport-https
-   # sudo apt-get update && sudo apt-get install azure-cli
-
     # Disable the firewall
     sudo ufw disable
 
@@ -48,11 +42,6 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y docker-engine
 
   SHELL
-
-  config.vm.synced_folder "aws/", "/home/vagrant/aws", owner: "vagrant", group: "vagrant"
-  #config.vm.synced_folder "azure/", "/home/vagrant/azure", owner: "vagrant", group: "vagrant"
-  config.vm.synced_folder "shared/", "/home/vagrant/shared", owner: "vagrant", group: "vagrant"
-  config.vm.synced_folder "examples/", "/home/vagrant/examples", owner: "vagrant", group: "vagrant"
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2048"
