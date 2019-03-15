@@ -8,7 +8,7 @@ Downloading this repo content and following the provided steps, you are going to
 
 ## Files
 | File                   | Description                                                                                                |
-|          :---:         |                                    :---:                                                                   |
+|          :---         |                                    :---                                                                |
 |`aws/env/us-east`       | Contain terraform code files required to create AWS Nomad Clients and Servers                              | 
 |`aws/modules/hashistack`| Contain terraform module file                                                                              |
 |`aws/packer.json`       | Packer file needed for creation of AWS image (Later we will use this image to create AWS environment)      |
